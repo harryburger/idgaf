@@ -1,0 +1,7 @@
+assets
+env.json
+build/
+nftwork.code-workspace/
+node_modules/
+yarn.lock
+.env

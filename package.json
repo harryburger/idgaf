@@ -1,0 +1,34 @@
+{
+  "name": "mynft",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "develop": "npx truffle develop",
+    "compile": "npx truffle compile",
+    "migrate": "npx truffle migrate",
+    "test": "npx truffle test test/*.test.js --show-events",
+    "deploy": "truffle migrate --reset --compile-all",
+    "lint": "solium --dir contracts/",
+    "lint:watch": "solium --watch --dir contracts/",
+    "lint:fix": "solium  --dir contracts/ --fix",
+    "fivepointzero": "prettier --write --tab-width 4 --print-width 140 'contracts/**/*.sol'"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.4.0",
+    "truffle": "^5.4.24"
+  },
+  "dependencies": {
+    "@openzeppelin/truffle-upgrades": "^1.12.0",
+    "@truffle/hdwallet-provider": "^2.0.0",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.27",
+    "truffle-plugin-verify": "^0.5.20"
+  }
+}
